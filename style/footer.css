@@ -1,0 +1,36 @@
+
+footer{
+    width: 100%;
+    min-height:100vh;
+    background: var(--primary);
+    padding: 5% 10%;
+    color: var(--background);
+    padding-top: calc(100px + 5%) !important;
+}
+.footer_ul_con{
+    gap: 2rem;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+footer h3{
+    color: var(--background);
+    margin-bottom: 1rem;
+}
+footer ul{
+    list-style: none
+}
+.footer_link{
+    margin-top: 10px;
+    color: var(--gray200);
+    cursor: pointer;
+}
+.footer_hr{
+    border-top: 2px dashed var(--blue100);
+    width: 100%;
+}
+footer .logo-wrapper{
+color: var(--background)
+}
+footer .logo-text{
+color: var(--background)
+}

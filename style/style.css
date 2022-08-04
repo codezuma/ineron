@@ -1,0 +1,306 @@
+@import url(./sweed.css);
+@import url(./color.css);
+@import url(./footer.css);
+@import url(./hambuger-menu.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+     border: 2px solid red;
+
+ 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+.hero_section {
+    width: 100%;
+    gap: 6rem;
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.nav_list .nav_item a {
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: #A1A1A2;
+    font-size: 1rem;
+}
+
+.nav_list .nav_item a:hover {
+    color: var(--gray700);
+}
+
+.hero-text {
+    max-width: 30ch;
+    position: absolute;
+}
+
+.hero-text-con{
+    margin-top:180px ;
+    position: relative;
+}
+.teacher-section {
+    padding: 2rem ;
+}
+.teacher-img-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 500px;
+    gap: 2rem;
+    max-width: 100%;
+}
+
+.teacher-wrapper {
+    border-radius: 20px;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow: hidden;
+    position: relative;
+    padding-top: 2rem;
+    
+}
+
+.teacher-wrapper img {
+    width: 100%;
+    position: absolute;
+    margin-top: 20px;
+
+    bottom: 0;
+}
+
+.teacher-wrapper1 {
+    grid-area: 2 / 3 / 7 / 4;
+    background-color: #A962F0;
+    bottom: 0;
+
+}
+
+.teacher-wrapper1 img {
+    bottom: 0;
+}
+
+
+.teacher-wrapper2 {
+    grid-area: 1 / 4 / 4 / 5;
+    background: #E6C8A3;
+}
+
+.teacher-wrapper2 img {
+    width: 80%;
+}
+
+.teacher-wrapper3 {
+    grid-area: 4 / 4 / 7 / 5;
+    background: linear-gradient(142.26deg, #32B8AC 3.07%, #30B5AC 93.21%);
+}
+
+.teacher-wrapper4 {
+    grid-area: 2 / 5 / 6 / 6;
+    background: #FFBA5D;
+}
+
+.teacher-wrapper5 {
+    grid-area: 2 / 1 / 6 / 2;
+    background: linear-gradient(142.26deg, #E6E5E4 3.07%, #DBDAD9 93.21%);
+
+}
+
+.teacher-wrapper6 {
+    grid-area: 1 / 2 / 4 / 3;
+    background: linear-gradient(142.26deg, #7EB593 3.07%, #7EB593 93.21%);
+}
+
+.teacher-wrapper7 {
+    grid-area: 4 / 2 / 7 / 3;
+    background-color: #FF924D;
+}
+
+
+
+
+
+
+.collab_companies_section{
+   margin-top: 5rem;
+   padding-bottom:3rem;
+}
+.collab_companies_section .company-img img{
+    height:3rem ;
+    filter: grayscale(1);
+    transition: 0.3s ease-out;
+}
+
+.collab_companies_section .company-img {
+    cursor: pointer;
+}
+.collab_companies_section .company-img:hover img {
+    filter: grayscale(0);
+}
+.short_desc_section{
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.companies-wrapper{
+    margin-left: -90%;
+}
+.feature-card{
+    height: 185px;
+    width: 220px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08);}
+ .feature-card .image{
+    height: auto;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+ }
+
+
+
+
+
+.course-category{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+.course-category img{
+    height: 50px;
+}
+.teacher-icon img{
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+}
+.course-card{
+    width: 400px;
+    height:500px;
+    cursor: pointer;
+    background-color: var(--gray50);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08);
+   }
+.course-card:hover{
+    background-color: var(--gray100);
+}
+.course-card .image-wrapper .img{
+    width: 100%;
+    min-height: 180;
+    object-fit: cover;
+    border-radius: 15px;
+} 
+.hof-student-card .student-img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+
+}
+.hof-student-card{
+    width: 250px;
+    height: 300px;
+    cursor: pointer;
+}
+.hof-student-card .company-logo{
+    height: 20px;
+}
+.product-card{
+    width: 300px;
+    height: 300px;
+}
+.product-image{
+    height: 100px;
+}
+@media (max-width: 600px) {}
+
+@media screen and (max-width: 786px) {
+
+    .teacher-img-container{
+        height: 900px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+     .teacher-wrapper img{
+        height: 100%;
+        width: auto;
+  
+     }
+     .teacher-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    .teacher-wrapper1 {
+        grid-area:2/ 3 / 9 / 5;
+        bottom: 0;
+
+    }    
+    .teacher-wrapper1 img{
+        height: 100%;
+        width: auto;
+    }
+
+    .teacher-wrapper2 {
+        grid-area: 1 / 5 / 5 / 7;
+    }
+    
+    .teacher-wrapper3 {
+        grid-area: 5 / 5 / 9 / 7;
+    }
+    
+    .teacher-wrapper4 {
+        grid-area: 1 / 1 / 5 / 3;
+    }
+    
+    .teacher-wrapper5 {
+        grid-area: 5 / 1 / 9 / 3;
+    }
+    
+    .teacher-wrapper6 {
+        grid-area: 1 / 2 / 4 / 3;
+    }
+    
+    .teacher-wrapper7 {
+        grid-area: 4 / 2 / 7 / 3;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1250px) {
+    .teacher-img-container{
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .teacher-img-container{
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+.teacher-img-container{
+    height: 600px;
+}
+}

@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteRule ^domain$ ./sidePages/domain/domain.php
+RewriteRule ^about$ ./sidePages/about/about.html
+RewriteRule ^policy$ ./sidePages/policy/policy-page.html
+RewriteRule ^vps-hosting/shared$  ./sidePages/VPS/vps.php?hosting=shared
+RewriteRule ^vps-hosting/private$  ./sidePages/VPS/vps.php?hosting=private
+
+
+RewriteRule ^hosting/wordpress$ ./sidePages/hosting/hosting.php?hosting=wordpress
+
+RewriteRule ^hosting$ /hosting/shared
+
+RewriteRule ^hosting/shared$ ./sidePages/hosting/hosting.php?hosting=shared
+
+RewriteRule ^hosting/unlimited$ ./sidePages/hosting/hosting.php?hosting=unlimited
+
+RewriteRule ^offers$ ./sidePages/offers/offers.html
+
+RewriteRule ^style/$ ./style/
+RewriteRule ^macbook/$ ./assests/frame127.jpg
+RewriteRule ^macbook/$ ./assests/frame127.jpg
+RewriteRule ^macbook/$ ./assests/frame127.jpg
+RewriteRule ^macbook/$ ./assests/frame127.jpg
+
+ErrorDocument 404 /sidePages/404page/404.html
