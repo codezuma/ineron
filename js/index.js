@@ -1,40 +1,38 @@
 import { stringToHTML,closeFaqonClick,dropdownForMobileNavItem,hamburgerMenu,changePriceAccordingToLocation, hideNavbarOnScroll, pageFunctionalities } from "./toolkit.js";
 gsap.registerPlugin(ScrollTrigger);
-  
-  gsap.from(".hero-text", {
+
+
+fromBottomAnimation(".hero_desc",".hero_desc")
+fromBottomAnimation(".hero-text",".hero-text")
+fromBottomAnimation(".student-group",".student-group")
+ staggerAnimation('.teacher-wrapper',".teacher-wrapper")
+ fromBottomAnimation(".collab_companies_section",".collab_companies_section");
+ fromBottomAnimation(".short_desc_section_text",".short_desc_section_text");
+ staggerAnimation(".feature-card",".feature-container ")
+ fromBottomAnimation(".from-bottom-animation",".from-bottom-animation");
+staggerAnimation('.course-card','.courses-container');
+staggerAnimation('.working-companies-wrapper>div','.working-companies-wrapper>div');
+staggerAnimation('.product-card','.product-card')
+staggerAnimation('.stagger-animation ','.stagger-animation ')
+ function staggerAnimation(target,trigger){
+  gsap.from(target, {
     scrollTrigger:{
-      trigger: ".hero-text-con",
-    },  y  :100,
-      opacity:.2
-      
-  });
-  gsap.from(".hero_desc", {
-    scrollTrigger:{
-      trigger: ".hero_section",
-      start: 'top top'
-    },    x:-100,
-      opacity:.2
-      
-  });
-  gsap.from(".student-group", {
-    scrollTrigger:{
-      trigger: ".hero_section",
-      start: 'top top'
-    }, // start the animation when ".box" enters the viewport (once)
-      x:100,
-      opacity:.2
-      
-  });
-  gsap.from(".teacher-wrapper", {
-    scrollTrigger:{
-      trigger: ".teacher-wrapper",
-    markers:true,
+      trigger: trigger,
   }, // start the animation when ".box" enters the viewport (once)
       y:100,
       stagger:0.02,
       opacity:.2
   });
-
+ }
+ function fromBottomAnimation(target,trigger){
+  gsap.from(target, {
+    scrollTrigger:{
+      trigger: trigger,
+  }, // start the animation when ".box" enters the viewport (once)
+      y:100,
+      opacity:.2
+  });
+ }
 
   hideNavbarOnScroll();
   hamburgerMenu();
@@ -47,3 +45,29 @@ gsap.to(".company-img", {
 });
  */
 
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+  var splide = new Splide( '#splide-categories', {
+    height   : '10rem',
+    focus    : 'center',
+    autoWidth: true,
+    pagination: false
+
+  } );
+  
+  splide.mount();
+} );
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+  var splide = new Splide( '.splide-hof', {
+    height   : '10rem',
+    focus    : 'center',
+    autoWidth: true,
+    pagination: false
+
+  } );
+  
+  splide.mount();
+} );

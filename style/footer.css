@@ -2,9 +2,10 @@
 footer{
     width: 100%;
     min-height:100vh;
-    background: var(--primary);
+    background: var(--white);
     padding: 5% 10%;
-    color: var(--background);
+    color: var(--gray800);
+    border-top: 4px solid var(--gray100);
     padding-top: calc(100px + 5%) !important;
 }
 .footer_ul_con{
@@ -13,7 +14,7 @@ footer{
     flex-wrap: wrap;
 }
 footer h3{
-    color: var(--background);
+    color: var(--gray800);
     margin-bottom: 1rem;
 }
 footer ul{
@@ -21,7 +22,7 @@ footer ul{
 }
 .footer_link{
     margin-top: 10px;
-    color: var(--gray200);
+    color: var(--gray4);
     cursor: pointer;
 }
 .footer_hr{
@@ -29,8 +30,8 @@ footer ul{
     width: 100%;
 }
 footer .logo-wrapper{
-color: var(--background)
+color: var(--gray800)
 }
 footer .logo-text{
-color: var(--background)
+color: var(--gray800)
 }

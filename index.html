@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,10 +8,9 @@
   <link rel="icon" type="image/x-icon" href="/assests/icons/byteistic-logo.svg">
   <title>Ineuron</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
 </head>
 <body>
-<nav class="nav_bar ">
+<nav class="nav_bar flex-center ">
   <div class="container align-items flex justify-content-space-between">
     <a class="logo-wrapper flex-center" href="/">
       <div class="logo-icon">
@@ -109,8 +107,8 @@
     </h1>
   </div>
 
-
-  <div class="flex justify-content-space-between fit-con pt-md ">
+<br>
+  <div class="flex justify-content-space-between flex-wrap flex-gap2 fit-con pt-md ">
     <span class="max-ch-30 hero_desc caption-text color-gray500">An ed-tech OTT Platform where you can learn from 400+
       courses
       with single subcription.</span>
@@ -151,6 +149,7 @@
 </div>
 
 <div class="collab_companies_section bg-color-gray-100 container flex-center p-md flex-direction-column flex-gap2">
+  <br>
   <h3 class=" no-wrap pr-md text-left fit-con color-gray800 font-weight-600">We Collabrate with</h3>
   <br>
 
@@ -190,16 +189,16 @@
 </div>
 
 <div class="short_desc_section container flex justify-content-flex-start align-items-center">
-  <div class="flex flex-direction-column width-50 flex-gap2">
+  <div class="flex short_desc_section_text flex-direction-column width-50 flex-gap2">
     <span class="font-weight-600 color-primary">Thinking about learning a new skill</span>
     <h2>Start Learning with Ineron </h2>
     <span class="body-normal width-70 color-gray500">Get on-demand courses with one Subscription or Choose a course
       which suites from categories like Data Science, Web developement ,Digital marketing and cloud computing. </span>
   </div>
-  <div class="flex flex-center  width-50">
-    <div class="flex flex-gap2 flex-direction-column p-md bg-color-white">
+  <div class="flex flex-center feature-container  width-50">
+    <div class="flex flex-gap2 flex-direction-column feature-wrapper p-md bg-color-white">
       <div class="flex flex-direction-column  rounded-sm p-md  bg-color-white  flex-gap1 feature-card">
-        <span class="caption-normal color-gray500">Hackathons</span>
+        <span class="caption-normal  color-gray500">Hackathons</span>
         <h2>5<font class="color-primary font-weight-600">+</font>
         </h2>
         <img class="image" src="./assests/icons/trophy.png" alt="">
@@ -217,7 +216,7 @@
         <img class="image" src="./assests/icons/graduated.png" alt="">
       </div>
     </div>
-    <div class="flex flex-gap2 flex-direction-column p-md bg-color-white">
+    <div class="flex flex-gap2 flex-direction-column feature-wrapper p-md bg-color-white">
       <div class="flex flex-direction-column  rounded-sm p-md  bg-color-white  flex-gap1 feature-card">
         <span class="caption-normal color-gray500">Teachers</span>
         <h2>40<font class="color-primary font-weight-600">+</font>
@@ -235,70 +234,66 @@
 </div>
 
 <div class="container flex justify-content-center flex-direction-column  align-items-start">
-  <div class="flex flex-direction-column flex-gap1">
+  <div class="flex from-bottom-animation flex-direction-column flex-gap1">
     <span class="font-weight-600 color-primary">Popular Categories</span>
     <h2>Browse through our courses </h2>
   </div>
-  <section class="splide-categories" aria-label="Splide Basic HTML Example">
+  <br><br>
+  <section class="splide" id="splide-categories" aria-label="Splide Basic HTML Example">
     <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">Slide 01</li>
-        <li class="splide__slide">Slide 02</li>
-        <li class="splide__slide">Slide 03</li>
-      </ul>
+      <div class="flex splide__list fit-con pt-md flex-gap2 justify-content-space-between">
+        <div class="course-category splide__slide p-sm flex-center flex-direction-column flex-gap2">
+          <img src="./assests/icons/round-table (1).png" alt="">
+          <div class="flex-center flex-direction-column flex-gap1 ">
+            <span class="caption-large color-gray800 text-center fit-con">Bootcamp</span>
+            <span class="body-normal color-gray500"> 40 Tests</span>
+          </div>
+        </div>
+        <div class="course-category splide__slide p-sm flex-center flex-direction-column flex-gap2">
+          <img src="./assests/icons/categories/data.png " alt="">
+          <div class="flex-center flex-direction-column flex-gap1 ">
+            <span class="caption-large color-gray800 text-center fit-con">Data Science</span>
+            <span class="body-normal color-gray500"> 40 Tests</span>
+          </div>
+        </div>
+        <div class="course-category splide__slide p-sm flex-center flex-direction-column flex-gap2">
+          <img src="./assests/icons/categories/megaphone.png" alt="">
+          <div class="flex-center flex-direction-column flex-gap1 ">
+            <span class="caption-large color-gray800 text-center fit-con">Digital marketing</span>
+            <span class="body-normal color-gray500"> 40 courses</span>
+          </div>
+        </div>
+        <div class="course-category splide__slide p-sm flex-center flex-direction-column flex-gap2">
+          <img src="./assests/icons/categories/exam.png" alt="">
+          <div class="flex-center flex-direction-column flex-gap1 ">
+            <span class="caption-large color-gray800 text-center fit-con">Test Series</span>
+            <span class="body-normal color-gray500"> 40 Tests</span>
+          </div>
+        </div>
+        <div class="course-category splide__slide p-sm flex-center flex-direction-column flex-gap2">
+          <img src="./assests/icons/cloud-service.png" alt="">
+          <div class="flex-center flex-direction-column flex-gap1 ">
+            <span class="caption-large color-gray800 text-center fit-con">Cloud Computing</span>
+            <span class="body-normal color-gray500"> 40 Tests</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <div class="flex fit-con pt-md flex-gap2 justify-content-space-between">
-    <div class="course-category p-sm flex-center flex-direction-column flex-gap2">
-      <img src="./assests/icons/round-table (1).png" alt="">
-      <div class="flex-center flex-direction-column flex-gap1 ">
-        <span class="caption-large color-gray800 text-center fit-con">Bootcamp</span>
-        <span class="body-normal color-gray500"> 40 Tests</span>
-      </div>
-    </div>
-    <div class="course-category p-sm flex-center flex-direction-column flex-gap2">
-      <img src="./assests/icons/categories/data.png " alt="">
-      <div class="flex-center flex-direction-column flex-gap1 ">
-        <span class="caption-large color-gray800 text-center fit-con">Data Science</span>
-        <span class="body-normal color-gray500"> 40 Tests</span>
-      </div>
-    </div>
-    <div class="course-category p-sm flex-center flex-direction-column flex-gap2">
-      <img src="./assests/icons/categories/megaphone.png" alt="">
-      <div class="flex-center flex-direction-column flex-gap1 ">
-        <span class="caption-large color-gray800 text-center fit-con">Digital marketing</span>
-        <span class="body-normal color-gray500"> 40 courses</span>
-      </div>
-    </div>
-    <div class="course-category p-sm flex-center flex-direction-column flex-gap2">
-      <img src="./assests/icons/categories/exam.png" alt="">
-      <div class="flex-center flex-direction-column flex-gap1 ">
-        <span class="caption-large color-gray800 text-center fit-con">Test Series</span>
-        <span class="body-normal color-gray500"> 40 Tests</span>
-      </div>
-    </div>
-    <div class="course-category p-sm flex-center flex-direction-column flex-gap2">
-      <img src="./assests/icons/cloud-service.png" alt="">
-      <div class="flex-center flex-direction-column flex-gap1 ">
-        <span class="caption-large color-gray800 text-center fit-con">Cloud Computing</span>
-        <span class="body-normal color-gray500"> 40 Tests</span>
-      </div>
-    </div>
-  </div>
+ <br>
   <br>
   <br>
   <div>
-
     <span class="font-weight-600 caption-large color-gray500">Courses</span>
-    <br><br>
-    <div class="flex justify-content-space-around flex-wrap flex align-items-center flex-gap-lg justify-content-space-between">
+    <br><br>  <br><br><br>
+    <div class="flex courses-container justify-content-space-around flex-wrap flex align-items-center flex-gap2 justify-content-space-between">
       <div class="flex p-md felx-gap1 flex-direction-column bg-color-white course-card">
         <div class="image-wrapper rounded-sm">
-          <img class="img" src="./assests/thumbnail.jpg" alt="">
+          <img class="img" src="./assests/thumbnail3.jpg" alt="">
         </div>
         <br>
         <div class="flex justify-content-space-between">
-          <span class=" pill caption-small bg-color-primary">Youtube</span>
+          <span class=" pill caption-small bg-color-primary">Web Dev</span>
           <span class="color-yellow flex-center flex-gap1">
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="#FAD03E"
               stroke="#FAD03E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -311,11 +306,10 @@
           </span>
         </div>
         <br>
-        <div>
-          <span class="caption-large">Youtube Mastery Batch 2 in Hindi</span>
+        <div class="flex flex-direction-column flex-gap1">
+          <span class="caption-large">FullStack Web Developement using Phython  in hindi .</span>
           <span class="caption-small color-gray500">course that will prepare you for Youtube and other social media
             platform. </span>
-
         </div>
         <br>
         <div class="flex justify-content-space-between">
@@ -324,7 +318,7 @@
               <img src="./assests/images/teachers/tulesko.png" alt="">
             </div> Naveen Sir
           </span>
-          <span>214 Students</span>
+          <span>112 Students</span>
         </div>
         <br>
         <h2 class="flex font-weight-600 caption-large color-primary">
@@ -350,8 +344,8 @@
           </span>
         </div>
         <br>
-        <div>
-          <span class="caption-large">Youtube Mastery Batch 2 in Hindi</span>
+        <div class="flex flex-direction-column flex-gap1">
+          <span class="caption-large">Youtube Mastery Batch 2 in Hindi  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
           <span class="caption-small color-gray500">course that will prepare you for Youtube and other social media
             platform. </span>
 
@@ -372,11 +366,11 @@
       </div>
       <div class="flex p-md felx-gap1 flex-direction-column bg-color-white course-card">
         <div class="image-wrapper rounded-sm">
-          <img class="img" src="./assests/thumbnail.jpg" alt="">
+          <img class="img" src="./assests/thumbnail2.jpg" alt="">
         </div>
         <br>
         <div class="flex justify-content-space-between">
-          <span class=" pill caption-small bg-color-primary">Youtube</span>
+          <span class=" pill caption-small bg-color-primary">DSA</span>
           <span class="color-yellow flex-center flex-gap1">
             <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="#FAD03E"
               stroke="#FAD03E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -389,8 +383,8 @@
           </span>
         </div>
         <br>
-        <div>
-          <span class="caption-large">Youtube Mastery Batch 2 in Hindi</span>
+        <div class="flex flex-direction-column flex-gap1">
+          <span class="caption-large">DSA for FAANG using phython and Javascript</span>
           <span class="caption-small color-gray500">course that will prepare you for Youtube and other social media
             platform. </span>
 
@@ -443,54 +437,61 @@
 <div class="container flex flex-direction-column flex-gap1 pt-md">
     <span class="font-weight-600 color-gray500">Our Students work in MNC and Starups</span>
     <h2>Hall of <font class="color-primary">fame</font></h2>
-    <div class="flex flex-gap2 p-md-none justify-content-space-between ">
-        <div class="shadow-sm p-md rounded-sm flex-center flex-direction-column flex-gap2 hof-student-card">
+    <br><br><br>
+    <div class="splide splide-hof">
+        <div class="splide__track p-md-none">
+          <div class="flex flex-gap2 p-md-none splide__list p-md-none justify-content-space-between ">
+            <div class="shadow-sm p-md rounded-sm flex-center flex-direction-column flex-gap2 hof-student-card splide__slide">
             <div class="fit-con flex-center">
               <img class="student-img shadow-sm" src="./assests/images/students/akash-b.jpeg" alt="">
             </div>
             <span class="body-regular font-weight-600">Aakash B</span>
-            <span class="flex-center flex-gap2">
-               <img src="./assests/images/hackathon-companies/amazon.svg" class="company-logo" alt="">
+            <span class="flex-center flex-gap1 flex-direction-column">
                <span class="color-gray800 body-normal font-weight-600">SDE 1</span>
+               <img src="./assests/images/hackathon-companies/amazon.svg" class="company-logo" alt="">
             </span>
-        </div>
-        <div class="shadow-sm p-md rounded-sm flex-center flex-direction-column flex-gap2 hof-student-card">
-            <div class="fit-con flex-center">
-              <img class="student-img shadow-sm" src="./assests/images/students/akash-b.jpeg" alt="">
             </div>
-            <span class="body-regular font-weight-600">Aakash B</span>
-            <span class="flex-center flex-gap2">
-               <img src="./assests/images/hackathon-companies/amazon.svg" class="company-logo" alt="">
-               <span class="color-gray800 body-normal font-weight-600">SDE 1</span>
-            </span>
-        </div>
-        <div class="shadow-sm p-md rounded-sm flex-center flex-direction-column flex-gap2 hof-student-card">
+            <div class="shadow-sm p-md rounded-sm flex-center flex-direction-column flex-gap2 hof-student-card splide__slide">
             <div class="fit-con flex-center">
-              <img class="student-img shadow-sm" src="./assests/images/students/akash-b.jpeg" alt="">
+              <img class="student-img shadow-sm" src="./assests/images/students/sammer.jpeg" alt="">
             </div>
-            <span class="body-regular font-weight-600">Aakash B</span>
-            <span class="flex-center flex-gap2">
-               <img src="./assests/images/hackathon-companies/amazon.svg" class="company-logo" alt="">
-               <span class="color-gray800 body-normal font-weight-600">SDE 1</span>
+            <span class="body-regular font-weight-600">Sameer Kumar</span>
+            <span class="flex-center flex-direction-column flex-gap2 ">
+               <span class="color-gray800 body-normal font-weight-600">Data Scientist</span>
+               <img src="./assests/images/hackathon-companies/bajaj.png" class="company-logo" alt="">
             </span>
-        </div>
-        <div class="shadow-sm p-md rounded-sm flex-center flex-direction-column flex-gap2 hof-student-card">
+            </div>
+            <div class="shadow-sm p-md rounded-sm flex-center flex-direction-column flex-gap2 hof-student-card splide__slide">
             <div class="fit-con flex-center">
-              <img class="student-img shadow-sm" src="./assests/images/students/akash-b.jpeg" alt="">
+              <img class="student-img shadow-sm" src="./assests/images/students/arvind.jpeg" alt="">
             </div>
-            <span class="body-regular font-weight-600">Aakash B</span>
-            <span class="flex-center flex-gap2">
-               <img src="./assests/images/hackathon-companies/amazon.svg" class="company-logo" alt="">
-               <span class="color-gray800 body-normal font-weight-600">SDE 1</span>
+            <span class="body-regular font-weight-600">Arvind Zagade</span>
+            <span class="flex-center flex-gap2 flex-direction-column">
+               <span class="color-gray800 body-normal font-weight-600">SDE 2</span>
+               <img src="./assests/images/hackathon-companies/ciena.png" class="company-logo" alt="">
             </span>
+            </div>
+            <div class="shadow-sm p-md rounded-sm flex-center flex-direction-column flex-gap2 hof-student-card splide__slide">
+            <div class="fit-con flex-center">
+              <img class="student-img shadow-sm" src="./assests/images/students/kalyan.jpeg" alt="">
+            </div>
+            <span class="body-regular font-weight-600">Kalyan Adhikari</span>
+            <span class="flex-center flex-direction-column flex-gap2">
+               <span class="color-gray800 body-normal font-weight-600">Lead SWE</span>
+               <img src="./assests/images/hackathon-companies/sunlife.png" class="company-logo" alt="">
+
+            </span>
+            </div>
+         </div>
         </div>
+     
     </div>
 </div>
 
 <div class="container  flex flex-direction-column flex-gap2">
   <div class="p-md-none flex flex-gap2 flex-direction-column">
     <h2>Where our <font class="color-primary"> achievers</font> are?</h2>
-    <div class="flex flex-wrap flex-center flex-gap-lg p-md-none">
+    <div class="flex working-companies-wrapper flex-wrap flex-center flex-gap-lg p-md-none">
         <div>
            <img src="https://halloffame.ineuron.ai/_next/image?url=%2Fimages%2Fcompanies%2Fmicrosoft.png&w=256&q=75" alt="">
         </div>
@@ -559,6 +560,11 @@
         <span class="caption-normal font-weight-500 color-gray500 text-center">Explore affiliate marketing opportunities with iNeuron and attain financial frredom.</span>
       </div>
       <div class="product-card flex-center flex-gap2 flex-direction-column">
+        <img class="product-image" src="./assests/blog.png" alt="">
+        <h3>InBlog</h3>
+        <span class="caption-normal font-weight-500 color-gray500 text-center">Blogging Platform Created by Ineuron for developers where you can read and write your own articles for free.</span>
+      </div>
+      <div class="product-card flex-center flex-gap2 flex-direction-column">
         <img class="product-image" src="./assests/cv.png" alt="">
         <h3>Job Portal</h3>
         <span class="caption-normal font-weight-500 color-gray500 text-center">Explore affiliate marketing opportunities with iNeuron and attain financial frredom.</span>
@@ -571,55 +577,50 @@
     <h2>Our Partnered <font class="color-primary"> Institutions</font></h2>
   </div>
   <div class="p-md-none flex flex-gap2 flex-wrap justify-content-space-between ">
-      <div class="flex-center flex-gap2 flex-direction-column">
+      <div class="flex-center stagger-animation flex-gap2 flex-direction-column">
         <img class="product-image" src="https://ineuron.ai/images/landing-page/colleges/taxila.svg" alt="">
        </div>
-      <div class=" flex-center flex-gap2 flex-direction-column">
+      <div class=" flex-center stagger-animation  flex-gap2 flex-direction-column">
         <img class="product-image" src="https://ineuron.ai/images/landing-page/colleges/vit.svg" alt="">
         </div>
-      <div class=" flex-center flex-gap2 flex-direction-column">
+      <div class=" flex-center stagger-animation  flex-gap2 flex-direction-column">
         <img class="product-image" src="https://ineuron.ai/images/landing-page/colleges/keit.svg" alt="">
       </div>
-      <div class="flex-center flex-gap2 flex-direction-column">
+      <div class="flex-center stagger-animation  flex-gap2 flex-direction-column">
         <img class="product-image" src="https://ineuron.ai/images/landing-page/colleges/gim.svg" alt="">
       </div>
-      <div class=" flex-center flex-gap2 flex-direction-column">
+      <div class=" flex-center stagger-animation  flex-gap2 flex-direction-column">
         <img class="product-image" src="https://ineuron.ai/images/landing-page/colleges/malnad-college.svg" alt="">
       </div>
   </div>
 </div>
 
-<footer class="fit-con bg-color-primary footer">
-  <div class="container fit-con">
+<footer class="fit-con flex-center flex-direction-column  footer">
+  <div class=" fit-con ">
 
     <div class="footer_ul_con flex justify-content-space-between">
+     
       <div>
-        <h3>Payment Accepted</h3>
-        <ul>
-          <li class="footer_link"><a href="" class="footer_link caption-text">Crypto</a></li>
-          <li class="footer_link"><a href="" class="footer_link caption-text">UPI</a></li>
-          <li class="footer_link"><a href="" class="footer_link caption-text">Paypal</a></li>
-          <li class="footer_link"><a href="" class="footer_link caption-text">Cashfree</a></li>
-          <li class="footer_link"><a href="" class="footer_link caption-text">Razorpay</a></li>
-          <li class="footer_link"><a href="" class="footer_link caption-text">bank transfer</a></li>
-        </ul>
+        <div><img src="./assests/icons/Ineuron-logo.svg" alt=""></div>
+        <span class="body-regular color-gray500 font-weight-600">Let's Build Together</span>
+        <br>
+        <br>
+        <div>
+           <address class="caption-normal max-ch-30">17th Floor Tower A, Brigade Signature Towers, Sannatammanahalli, Bengaluru, Karnataka 562129.</address>
+        </div>
+        <br><br>
+        <div class="color-primary flex flex-gap1" > 
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6118FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>          <span class="body-normal"></span>
+          <span class="body-normal font-weiht-600">contact@ineuron.ai</span>
+        </div>
       </div>
       <div>
-        <h3>Hosting</h3>
+        <h3>Company</h3>
         <ul>
-          <li class="footer_link"><a href="/hosting/shared" class="footer_link caption-text">Shared</a></li>
-          <li class="footer_link"><a href="/hosting/wordpress" class="footer_link caption-text">Wordpress</a></li>
-          <li class="footer_link"><a href="/hosting/unlimited" class="footer_link caption-text">Unlimited</a></li>
-          <li class="footer_link"><a href="/hosting" class="footer_link caption-text">VPS Hosting</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Domain</h3>
-        <ul>
-          <li class="footer_link"><a href="" class="footer_link caption-text">Buy Domain</a></li>
-          <li class="footer_link"><a href="" class="footer_link caption-text">Renew Domain</a></li>
-          <li class="footer_link"><a href="" class="footer_link caption-text">Migrate Domain</a></li>
-          <li class="footer_link"></li>
+          <li class="footer_link"><a href="" class="footer_link caption-text">Contact us</a></li>
+          <li class="footer_link"><a href="" class="footer_link caption-text">Faq</a></li>
+          <li class="footer_link"><a href="" class="footer_link caption-text">Job Assitance</a></li>
+          <li class="footer_link">Privacy policy</li>
         </ul>
       </div>
       <div>
@@ -632,40 +633,24 @@
         </ul>
       </div>
       <div>
-        <h3>Pages</h3>
+        <h3>Product</h3>
         <ul>
-          <li class="footer_link"><a href="/hosting" class="footer_link caption-text">Pricing </a></li>
-          <li class="footer_link"><a href="/offers" class="footer_link caption-text">Offers</a></li>
-          <li class="footer_link"><a href="/policy/" class="footer_link caption-text">Privacy Policy</a></li>
-          <li class="footer_link"><a href="/about" class="footer_link caption-text">Contact us</a></li>
+          <li class="footer_link"><a href="/hosting" class="footer_link caption-text">Job portal </a></li>
+          <li class="footer_link"><a href="/offers" class="footer_link caption-text">InBlog</a></li>
+          <li class="footer_link"><a href="/policy/" class="footer_link caption-text">Internship</a></li>
+          <li class="footer_link"><a href="/about" class="footer_link caption-text">Become a affiliate</a></li>
+          <li class="footer_link"><a href="/about" class="footer_link caption-text">Hall of Fame</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer_hr"></div>
-    <br><br>
-    <div class="flex flex-gap justify-content-flex-start align-items-center flex-wrap">
-      <div class="logo-wrapper flex-center">
-        <div class="logo-icon">
-          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_39_67)">
-              <path
-                d="M7.20274 1.26481C6.18456 1.27298 5.20045 1.35967 4.33159 1.61649L7.54406 7.39894L0.958496 7.55956L4.42477 13.8239L5.75524 16.3939L4.39528 19.1245L0.958496 25.3888L7.54406 25.5494L4.33159 31.3319H18.7877C22.6705 31.3319 26.1205 31.548 29.2963 28.9162C32.0078 26.6691 33.2406 23.0604 32.895 19.6063C32.7872 18.5285 32.1392 17.4659 32.1527 16.3939C32.1647 15.4357 32.7151 14.4603 32.8539 13.5026C33.1885 11.1914 32.7111 8.77779 31.5567 6.75644C27.6142 -0.146596 18.9055 1.45586 12.2022 1.45586C10.6914 1.45586 8.89971 1.25119 7.20274 1.26481ZM18.7237 4.57014C23.2309 4.51682 28.026 5.02776 29.3738 9.96891C29.7535 11.3615 29.7542 12.9287 29.3054 14.3058C29.0826 14.9894 28.3428 15.8333 28.4135 16.5545C28.5001 17.4377 29.2916 18.2271 29.4726 19.1245C30.0637 22.0565 29.0622 25.2282 26.4976 26.9075C24.477 28.2307 22.2284 28.1194 19.9121 28.1194H9.95342C10.2345 27.3513 10.7656 26.0071 11.4825 25.5541C12.1789 25.1137 13.9404 25.5494 14.7721 25.5494C18.048 25.5494 23.1047 26.5498 25.6647 24.0555C27.049 22.7066 27.2612 20.4946 26.4377 18.8032C26.0776 18.0637 25.1657 17.1054 25.3344 16.2332C25.5005 15.3749 26.234 14.6227 26.5733 13.8239C27.2806 12.1585 26.924 10.1569 25.6666 8.85962C23.2834 6.40063 18.2185 7.39895 15.0934 7.39895C12.4693 7.39895 10.7994 7.5997 9.95342 4.66835H14.4509C15.7509 4.66835 17.2213 4.58793 18.7237 4.57015V4.57014ZM8.18091 10.5976C8.75283 10.6036 9.30964 10.6686 9.69052 10.937C10.1232 11.2421 10.3227 11.9272 10.5608 12.3783C11.1498 13.4944 12.7307 15.2515 12.6247 16.5545C12.5348 17.6612 11.4278 18.9953 10.8619 19.9276C10.4829 20.5519 10.0845 21.6301 9.43736 22.0113C8.72381 22.4316 7.3862 22.1763 6.58032 22.1763C7.03569 20.2376 9.38102 18.5149 9.52896 16.5545C9.67272 14.65 7.01089 12.4933 6.58032 10.6114C7.02195 10.6444 7.609 10.5916 8.18091 10.5976ZM21.9704 10.7639C22.7841 10.7736 23.6307 10.9156 23.7137 11.8967C23.857 13.5923 21.416 14.9039 21.6118 16.5545C21.7858 18.0202 24.9397 20.527 23.2077 21.8965C22.5347 22.4286 21.1996 22.1763 20.394 22.1763C18.0448 22.1763 15.6575 22.0423 13.3265 22.3369C13.8972 20.3968 16.1848 18.5483 16.3602 16.5545C16.5136 14.8106 13.9419 12.3977 13.3265 10.772H21.1971C21.4315 10.772 21.6991 10.7606 21.9704 10.7639V10.7639Z"
-                fill="#FFEFED" />
-            </g>
-            <defs>
-              <clipPath id="clip0_39_67">
-                <rect width="32" height="32" fill="white" transform="translate(0.958496 0.300049)" />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="logo-text h3"> &nbsp;&nbsp;&nbsp; Byteistic</div>
-      </div>
-      <span class="background-color caption-text"> Online Presence Made Affirdable </span>
-      <span class="background-color caption-text"> © 2022 Byteistic, LLC. All rights reserved.</span>
-    </div>
   </div>
 </footer>
+<div class="fit-con  flex-center bg-color-primary p-md-none">
+  <div class="container">
+    <span class="color-white body-normal font-weight-600">Copyright @ 2022 All Rights Reserved</span>
+  </div>
+</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
   integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
@@ -673,6 +658,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
   integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
 <script type="module" src="/js/index.js"></script>
 </body>
 
