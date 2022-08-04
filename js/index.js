@@ -2,9 +2,7 @@ import { stringToHTML,closeFaqonClick,dropdownForMobileNavItem,hamburgerMenu,cha
 gsap.registerPlugin(ScrollTrigger);
 
 
-fromBottomAnimation(".hero_desc",".hero_desc")
 fromBottomAnimation(".hero-text",".hero-text")
-fromBottomAnimation(".student-group",".student-group")
  staggerAnimation('.teacher-wrapper',".teacher-wrapper")
  fromBottomAnimation(".collab_companies_section",".collab_companies_section");
  fromBottomAnimation(".short_desc_section_text",".short_desc_section_text");
@@ -24,6 +22,23 @@ staggerAnimation('.stagger-animation ','.stagger-animation ')
       opacity:.2
   });
  }
+ gsap.from(".hero_desc", {
+  scrollTrigger:{
+    trigger: ".hero_desc",
+    start: 'top center'
+}, // start the animation when ".box" enters the viewport (once)
+    x:-100,
+    opacity:.2
+});
+gsap.from(".student-group", {
+  scrollTrigger:{
+    trigger: ".student-group",
+    start: 'top center'
+
+}, // start the animation when ".box" enters the viewport (once)
+    x:100,
+    opacity:.2
+});
  function fromBottomAnimation(target,trigger){
   gsap.from(target, {
     scrollTrigger:{
