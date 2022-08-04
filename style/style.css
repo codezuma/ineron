@@ -11,6 +11,7 @@
 }
 
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +231,6 @@ body {
 .product-image{
     height: 100px;
 }
-@media (max-width: 600px) {}
 
 @media screen and (max-width: 786px) {
     .short_desc_section{
@@ -342,4 +342,19 @@ body {
     min-height: auto;
 }
 
+}
+@media screen and  (min-width: 600px) {
+    .teacher-img-container{
+        height: 300px;
+    }
+    .working-companies-wrapper{
+        gap: 2rem;
+    }
+    .product-card-wrapper{
+        justify-content: center;
+    }
+    .product-card{
+        width: 100%;
+        max-width: 400px;
+    }
 }
