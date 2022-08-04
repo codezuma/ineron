@@ -19,13 +19,13 @@
 .hosting-item-feature-list{
         padding: 0 2rem;     
         gap: 10px;   
-        list-style: url(/assests/check\ 1.png);
+        list-style: url(/assests/check.png);
 }
 .hosting-item-feature-list-name{
     padding: 0 2rem;     
     gap:17px;   
     list-style:none;
-    list-style: url(/assests/check\ 1.png);
+    list-style: url(/assests/check.png);
 }
 .hosting-item-feature-list-name li span{
     padding-bottom: 5px;bottom: 5px;

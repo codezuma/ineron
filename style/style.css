@@ -287,7 +287,14 @@ body {
         grid-area: 4 / 2 / 7 / 3;
         display: none;
     }
-
+     
+    .product-card-wrapper{
+        justify-content: center !important;
+    }
+    .product-card{
+        width: 100% !important;
+        max-width: 400px !important;
+    }
 }
 
 
@@ -351,12 +358,5 @@ body {
     }
     .working-companies-wrapper{
         gap: 2rem;
-    }
-    .product-card-wrapper{
-        justify-content: center;
-    }
-    .product-card{
-        width: 100%;
-        max-width: 400px;
     }
 }
