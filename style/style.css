@@ -1,5 +1,6 @@
 @import url(./sweed.css);
 @import url(./color.css);
+@import url(./neuron-card.css);
 @import url(./footer.css);
 @import url(./hambuger-menu.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -327,7 +328,6 @@ body {
     }
     
 }
-
 @media screen and (min-width: 1500px) {
     .teacher-img-container{
         height: 500px;
@@ -343,7 +343,9 @@ body {
 }
 
 }
-@media screen and  (min-width: 600px) {
+
+
+@media screen and  (max-width: 600px) {
     .teacher-img-container{
         height: 300px;
     }
